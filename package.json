@@ -1,0 +1,30 @@
+{
+  "name": "dm-blog",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "json-server": "^0.12.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-js\" \"npm run db\"",
+    "start-js": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "db": "json-server -w server/db.json -p 3001"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3001",
+      "ws": true
+    }
+  },
+  "main": "server/server.js"
+}

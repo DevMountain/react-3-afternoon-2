@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+button{
+  background-color: rgb(22, 90, 175);
+  color: white;
+  border: none;
+  border-radius: 1px;
+  padding: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 65px;
+}
+button:active{
+  background-color: rgb(14, 57, 110);
+}
+.cancel-button{
+  background-color: #555
+}
+.cancel-button:active{
+  background-color: #333
+}
+.delete-button{
+  background-color: firebrick;
+}
+.delete-button:active{
+  background-color: rgb(110, 25, 25);
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.app-header {
+  background-color: rgb(22, 120, 200);
+  width: 100%;
+  height: 80px;
+  color: white;
+  box-shadow: 1px 0px 6px 0px #222;
+  display: grid;
+  grid-template-columns: 180px 2fr 2fr 2fr 8fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo{
+  width: 130px;
+}
+
+.nav-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link:hover{
+  background-color: rgb(22, 90, 175);
+}
+
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: calc(100vh - 80px);
+  padding-top: 25px;
+}
+
+
+.hero-container{
+  width: 900px;
+  height: 400px;
+  color: white;
+  text-shadow: 1px 1px 6px #111, -1px -1px 6px #111;
+  display: grid;
+  grid-template-rows: 1fr 80px 50px;
+  justify-items: center;
+  align-items: center;
+  background-size: cover;
+  padding: 15px;
+}
+.hero-container h1{
+  grid-row: 2/3;
+}
+.hero-container h3{
+  grid-row: 3/4;
+}
+
+.thumb-container{
+  width: 200px;
+  height: 200px;
+  background-color: #777;
+  color: white;
+  text-shadow: 1px 1px 6px #111, -1px -1px 6px #111;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+.thumb-container:hover{
+  grid-template-rows: 1fr 3fr;
+}
+
+.blog-grid{
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.blog-list{
+  padding-top: 25px;
+  width: 80%;
+  display: grid;
+  grid-gap: 25px;
+}
+
+
+.blog-tile{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 4fr;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(5,5,5,0.1);
+}
+.blog-tile img{
+  grid-row: 1 / 4;
+  align-self: center;
+  justify-self: center;
+  height: 300px;
+  width: 400px;
+}
+.blog-tile h3, h4, p{
+  margin-right: 25px;
+}
+.blog-tile h3{
+  margin-top: 15px;
+}
+
+
+.search-group{
+  font-weight: bold;
+  width: 60%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 145px 1fr 60px;
+  align-items: center;
+}
+
+.add-blog{
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 30px) 1fr 50px;
+  grid-gap: 15px;
+}
+
+.input-group{
+  display: grid;
+  width: 100%;
+  justify-self: left;
+  grid-template-columns: 90px 1fr;
+}
+.input-group label{
+  margin-right: 15px;
+  font-weight: bold;
+  align-self: center;
+  /* justify-self: right; */
+}
+
+.text-input{
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 1fr;
+}
+.text-input label{
+  justify-self: left;
+}
+.text-input textarea{
+  width:100%;
+  height:100%;
+  align-self: center;
+  justify-self: center;
+  resize: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.buttons{
+  max-width: 250px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-content{
+  padding:0;
+}
+.blog-container{
+  padding: 25px 10%;
+}
+.blog-img{
+  height: 400px;
+  width: 100vw;
+  color: white;
+  text-shadow: 1px 1px 6px #111, -1px -1px 6px #111;  
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px;
+}
+
+.modal-bg{
+  background-color: rgba(5,5,5,0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+.box{
+  background-color: white;
+  border: 1px solid #444;
+  border-radius: 2px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+.box h3{
+  grid-column: 1/3;
+}
+.box button{
+  width: 100%;
+}
+
+.app-footer{
+  width: 100%;
+  height: 55px;
+  background-color: #222;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
