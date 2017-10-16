@@ -13,6 +13,7 @@ class Header extends Component{
                 </Link>
                 <Link className="nav-link" to='/search'>Search</Link>
                 <Link className="nav-link" to='/add'>Add Post</Link>
+                <Link className="nav-link" to="/user">New User</Link>
             </header>
         )
     }

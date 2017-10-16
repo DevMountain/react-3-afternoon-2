@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+
 import ConfirmModal from './subcomponents/ConfirmModal';
 
-
+// import axios
 
 class Add extends Component {
     constructor(){
@@ -18,9 +19,8 @@ class Add extends Component {
 
     }
 
-    // Insert post function here that will use an Axios request:
+    // insert post function
     
-
     
     render() {
         let {title, subTitle, image, text} = this.state;
@@ -46,7 +46,6 @@ class Add extends Component {
 
 
                     <div className="buttons">
-                        {/* add an onClick to the post button that will invoke your submit method */}
                         <button onClick={_=>this.post()}>Post</button>
                         <button onClick={_=>this.cancel()} className='cancel-button'>Cancel</button>
                     </div>

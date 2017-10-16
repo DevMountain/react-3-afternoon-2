@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "db": "json-server -w server/db.json -p 3001"
+    "db": "json-server --watch server/db.json --port 3001 --routes server/routes.json"
   },
   "proxy": {
     "/api": {

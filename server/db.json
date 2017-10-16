@@ -1,272 +1,306 @@
 {
-    "blogs": [
-        {
-            "id": 0,
-            "name": "Andrew Garvin",
-            "userID": 0,
-            "image": "http://delivery.gettyimages.com/xr/109072999.jpg?v=1&c=IWSAsset&k=3&d=77BFBA49EF87892102A727B1636DE2E61B7D42B8BC1F6B9121A86BE89F8F9103331E400E51A7E00DE30A760B0D811297",
-            "title": "Ode To Brennys Cow",
-            "subTitle": "A Gold-starred Haiku",
-            "text": "Hello.\n\n I'd like to tell the story of Farmer Brenny, and his cow.\n\n Years ago, in the land and time of St. Siaosi, there lived a man named Mr. Brenny. This man was a young peddler, who's only desire was to become a merchant. Though fortune did not always smile upon him, he felt deep within his heart that someday, he would do great things.\n\n On the ten and seventh day, of the seventh month, in the Year of our Lord, two thousand and seventeen, Mr. Brenny's life was about to change. He did not know this, but on this very day, he would meet Mrs. Anne Drue.\n\n Mrs. Drue was a quaint individual, who was looking for someone to run her family's farm, so that she could travel the world. Upon meeting Mr. Brenny, Anne knew that her search was over.\n\n Anne decided to approach Brennys uncle, Lord Lloyd of Alans Mill, with the intent to hire Brenny for the next seven years. Upon signing the contract, Anne and Mr. Brenny were on their way.\n\n Seven years hence, our young adventurers Anne and Mr. Brenny decided to part ways, after the Kings Captain, Lt. Jaime Robberson moved the battleground of the war to their old-town farm.\n\n\nThe end.",
-            "featured": true
-        },
-        {
-            "id": 1,
-            "name": "Brennon Schow",
-            "userID": 2,
-            "image": "https://en.wikipedia.org/wiki/Llama#/media/File:Domestic_llama_(2009-05-19).jpg",
-            "title": "Se llama llama",
-            "subTitle": "I'm too confused",
-            "text": "Happy llama, sad llama, mentally deranged llama, super llama, drama llama, big, fat, mama llama, duck.",
-            "featured": false
-        },
-        {
-            "id": 2,
-            "name": "Emily Keator",
-            "userID": 1,
-            "image": "http://media2.giphy.com/media/nVXzt7FSJlX7W/giphy.gif",
-            "title": "What to do if you think your mentor is an alien",
-            "subTitle": "It's probably Alan",
-            "text": "If you think that your alien is a mentor, there are several steps to take. \n\n. Report your suspicions to Jeremy, and provide tinfoil hats for th eboth of you so the alien won't figure it out. \n\n. Ask them if they ate a strange food for breakfast. Aliens, attempting to blend in, will probably say yes. \n\n\n. Create a website that requires them to login and give them the username \"Alien\", and see if they react. If they react then they are an Alien. If they scream at the mention of 'React', then they are probably just an Angular-biased person. \n\n\n\n. Pepper them with questions about their life growing up on Earth. If they get nervous, report them to NASA immediately.",
-            "featured": true
-        },
-        {
-            "id": 3,
-            "name": "Jeffrey",
-            "userID": 3,
-            "image": "http://http.cat/418",
-            "title": "I'm a little Teapot",
-            "subTitle": "The Song we all Know and Love",
-            "text": "I'm a little teapot\nshort and stout\nhere is my handle\nhere is my spout\n\nWhen I get all steamed up\nhear me shout\n'tip me over\nand pour me out'",
-            "featured": true
-        },
-        {
-            "id": 4,
-            "name": "Andrew Garvin",
-            "userID": 0,
-            "image": "http://cdn-image.foodandwine.com/sites/default/files/1470854446/baguette-vending-machine-fwx-1.jpg",
-            "title": "The Devils Baker",
-            "subTitle": "A history of the rick-roll",
-            "text": "The year was 1987. Inflation rates in America were at an all-time 3.66%. 1 LBS of bacon cost $1.80. Supertyphoon Nina struck the Philippines, submerging 14 fishing villages. Life move on.\n\n Beyond these events, something life-changing occured in a small recording studio in a small town. The title: Never Gonna Give You Up.\n\n This song, the solo debut single of singer/song-writer Rick Astley would quickly change the way we browse the internet. \n\n Forever.\n\n Fast-forward to the year 2007. The month was May. The location was 4chan. The clickbait a trailer for the hit video game GTA 4.\n\n Within a year, this viral internet practice quickly gained notice from mainstream media, having reports from magazines like Wired.\n\n In conclusion to this article, we advise all viewers to take caution. You'll never know where Rick will strike, and you'll never truly be prepared.\n\n With the birth of the rick roll, came the death of us all.",
-            "featured": false
-        },
-        {
-            "id": 5,
-            "name": "Chris Anderson",
-            "userID": 4,
-            "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
-            "title": "A Bluegrass Dream",
-            "subTitle": "A Kentucky Boy Stuck in Utah",
-            "text": "Hello, \n If you are reading this I survived the mountain.\n As a Kentuckian I fit right in round these parts, minus the Birkenstocks that everyone seems to wear. I spent many nights wishing on the stars about being home around the Bluegrass, and Kentucky Basketball. It has been a long time since I smelled the sweet scent of HoneySuckle or the sound of horses thundering around the track at Churchill Downs. It has been quite the journey from KY to UT, but one that will not be forgotten. The knowledge bestowed upon me by Brennon, Lloyd, and the long lost Alan will stay with me till the end of time, and for that I am forever grateful. Their guiding spirit has brought me from the dpeths of unknown coding, and stupid questions, to a somewhat knowledgeable coder. For that, I am ever thankful. ",
-            "featured": false
-        },
-        {
-            "id": 6,
-            "name": "Janise Suski",
-            "userID": 5,
-            "image": "http://www.onlinetypingjobs.org/wp-content/uploads/2016/10/typing-jobs.jpg",
-            "title": "The Time A Camera Crew Recorded Me Typing",
-            "subTitle": "Don't Type Louder",
-            "text": "The news crew came to film an interview with Tyler the creator (of DevMountain) and set up the cameras in our classroom. They shot the interview in front of my desk. With the lights in my eyes, I tried to focus on my work and not look directly into the camera. I put on my best poker face, sat up straight and did my work. After they finished the interview, the camera guy came up to me and asked if he could record me typing on my laptop to get a sound byte for their segment. I reluctantly agreed, even though I hate being recorded. He told everyone to be quiet and put the camera really close to my hands. I instantly forgot every single word in the English language and started typing gibberish, really hoping that he wasn't filming my computer screen, which currently looked like, ';al;sdjfaeia;lsdkfa;kea;aosiefa;nfa;esjf'. I thought I heard him say, 'Can you please type louder?' So I started pounding on my keyboard, while still not typing any actual words. Apparently I had been making a face showing my discomfort because, out of the corner of my eye, I saw a group of people watching me, doubled over in silent laughter. At this point, I also realized that the camera man had asked me to type more distinctly, and not louder, because I was still very apparently typing gibberish. After an awkward minute of silence, a large camera pointed at my hands, and an annoyed camera man not getting the shot he wanted because I was still not typing any more distinctly, the camera crew left. I really hope they don't use any of those shots. I don't know if I could handle the fame that comes with the skill of awkwardly typing in a silent, brightly lit classroom.",
-            "featured": true
-        },
-        {
-            "id": 7,
-            "name": "R. J. Stewart",
-            "userID": 6,
-            "image": "https://media.giphy.com/media/11gUHxG1ehyLfy/giphy.gif",
-            "title": "Whiplash Pug",
-            "subTitle": "Not quite my tempo.",
-            "text": "This pug's got the heart, but does he have the rhythm?",
-            "featured": false
-        },
-        {
-            "id": 8,
-            "name": "Thus Saith the Lloyd",
-            "userID": 7,
-            "image": "https://i.pinimg.com/originals/dc/f9/84/dcf984f5698b5143696be337f3bf9e28.jpg (52kB) ",
-            "title": "The Importance of Seperating Work and Home Life",
-            "subTitle": "The consequences of using your precise logic skills and habits can cause stress in your home life.",
-            "text": "Your skills in logic and precision are highly sought after.\nYou are paid well for those skills, but they have their time and place. That place is not at home.\n\nNow, I'm not saying that you should be illogical or imprecise at home. I am only suggesting that for your own happiness and the happiness of your home you need to allow for more ambiguity and assumptions in your conversations with your significant other, roommates, and children.\n\nWhen someone asks you a question using AND or OR, you may need to format your answer in a way that they can parse.\n\"Would you like to go to Wendy's or Taco Bell for lunch?\" Now, we both know that the answer of \"yes\" means that one of those options is acceptable, but they may not know what you mean. I recommend you say \"either\" before the choices, or the one you prefer.\n\nWhen someone asks you to do several things don't assume that the conditionals are always linked to the entire list.\n\nThe term \"while\" is very similar to what you are familiar with in your programming background, however, you never assume that the condition given with the while is permanent.\n\"While you are out ...\" !== while(youAreOut = true) {//actions here}\n\n\"While you are out ...\" === while(youAreOut === true) {//actions here}\n\nRemember, you are multilingual now and you are going to have a \"fun\" time learning the quirks and syntax of this language and the accompaning APIs (Another-Person Interface).\n\nP.S. Bonus suggestion: take up a hobby not related to programming. It will help you interface with others!",
-            "featured": true
-        },
-        {
-            "id": 9,
-            "name": "Andi Platter",
-            "userID": 8,
-            "image": "https://i.ytimg.com/vi/KG1U8-i1evU/maxresdefault.jpg",
-            "title": "Looking for a job",
-            "subTitle": "ew",
-            "text": "At some point you will have to find a web developer job. You might want to give up and become a trophy wife or a trophy husband. This is so stressful.\n\n If you work hard enough you might be able to get a pet lamb or a dog. Or you will fail and become the troll under the bridge you always identified with as a child.\n\n This is the worst blog post ever, I'm sorry just stop reading now. Unless you would like a few facts about dogs.\n\n\n Puppies can sleep 18 to 20 hours a day during that rapid body growth phase. Pretty cool eh? How about this one: An African wolf dog known as the Basenji is the only dog in the world that cannot bark. Wow so amazing. \n\n\n\n Okay that is all, do good and be smart. Web dev is hard but you're doing great! Hope you liked the dog facts! If you come to the bridge I'll see you there!",
-            "featured": false
-        },
-        {
-            "id": 10,
-            "name":"David Fischer",
-            "userID": 9,
-            "image":"http://soolnua.com/wp-content/themes/soolella/images/ice17/icecream-purple-pink.svg", 
-            "title":"Getting a new job", 
-            "subTitle":"Ben and Jerry's Ice Cream Flavor Namer", 
-            "text":"When looking for a new job the most important thing is finding a job that is fulfilling.  If you really want a job that bring out your creative side I recommend Ben and Jerry's.  You can taste all the ice cream before it hits the market and you get to determine how the market and people will see this for the first time!  \"SQL Caramel Tracks\", and \"Ever Flowing Gooey Coding\" are just a few examples of our recent flavors thanks to me!  Good luck following your dreams!",
-            "featured": false
-        },
-        {
-            "id": 11,
-            "name": "Brennon Schow",
-            "userID": 1,
-            "image": "https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif",
-            "title": "How to host on Digital Ocean",
-            "subTitle": "A step-by-step guide",
-            "text": "1. Create an app. \n\n This guide doesn't claim to teach you any of that fluffy programming nonsense. I expect that you found this guide after you've already built your \"application\". If you haven't learned this yet, then might I interest you in DevMountain School of Witchcraft and Wizardry? http://devmountain.com \n\n2. Create a Digital Ocean droplet. \n\n If you need help with this part, ask a mentor.\n\n 3. Put your app on the Digital Ocean droplet.\n\n\n\n See!? It's as easy as 1, 2, 3. :)"
-        },
-        {
-            "id": 12,
-            "name": "Emily Keator",
-            "userID": 2,
-            "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
-            "title": "How to Win Over Andi Platter, Web Developer",
-            "subTitle": "Just remember: she HATES dogs",
-            "text": "Step 1: Throw the giant rubber duck under the train, she considers it a menace. \nStep 2: Kick a puppy in front of her. \nStep 3: Every tuesday, jump out at her screaming 'SHIA SUPRISE!' \nStep 4: Spell her name with a Y, the way she says it's meant to be spelled. \nStep 5: Offer her a bunch of bananas, she loves them. \nStep 6: complain about how much you hate Sherlock, because she will immediately be drawn to you.",
-            "featured": false
-        },
-        {
-            "id": 13,
-            "name": "Emily Keator",
-            "userID": 2,
-            "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
-            "title": "How to Smash a Computer",
-            "subTitle": "It's only $1000",
-            "text": "Step 1: Place computer on a solid surface. \nStep 2: Obtain sledgehammer. \nStep 3: Raise hammer above head, 45 degree angle. \nStep 4: ARE YOU CRAZY DON'T SMASH YOUR COMPUTER THAT THING IS EXPENSIVE AND YOU WILL FIND THE ERROR! \nStep 5: Yoga.",
-            "featured": true
-        },
-        {
-            "id": 14,
-            "name": "Emily Keator",
-            "userID": 2,
-            "image": "https://latimesherocomplex.files.wordpress.com/2015/04/ca-0413-the-avengers-153.jpg",
-            "title": "How to De-Bug",
-            "subTitle": "Not recommended for Arachnophobes",
-            "text": "Step 1: Obtain a spider egg from a traveler from a distant land. \nStep 2: Raise your spider to a gigantic size over 20-odd years. \nStep 3: When a bug appears in your code, allow the giant spider to go on a rampage and eat every bug in the building. No humans!! Unless they are annoying. \nStep 4: This is really a terrible idea, but at least you will frighten your enemies.",
-            "featured": true
-        },
-        {
-            "id": 15,
-            "name": "Brennon Schow",
-            "userID": 1,
-            "image": "https://www.funnypica.com/wp-content/uploads/2012/06/Funny-Goat-01.jpg",
-            "title": "Who Are You",
-            "subTitle": "Who Are You, Really?",
-            "text": "Who are you? Really, who are you? I mean, who are you *really*? Look inside yourself and ask, \"Who am I?\" You might be surprised what you find, and the best prize is a SURprise. So I ask again, who are you?",
-            "featured": false
-        },
-        {
-            "id": 16,
-            "name": "Andrew Garvin",
-            "userID": 0,
-            "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
-            "title": "Here Kitty Kitty",
-            "subTitle": "The story with an un-related title",
-            "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years - NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\n\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end"
-        },
-        {
-            "id": 17,  
-            "name":"Bryan Smith",
-            "userID": 10,
-            "image":"https://static1.squarespace.com/static/58680ce2d1758e371522bf7f/5868b4695016e16d593b7a3d/58db1d895016e15e289c9b3d/1490759681172/Opa.JPG?format=2500w",
-            "title":"It's just code, Bro",
-            "subTitle":"An Ode to Code",
-            "text":"'Hello, world!' The students would type, Learning to code both day and night.\n\n for loops, if statements, React and const, learning this stuff might take you several months. \n\n Lucky for you, DevMountain is here. Lets change that career path for this is your year! \n\n You'll decide between Atom, Sublime and VSCode while we take you down this road we know as Node. \n\n content, padding, border and margin? Join us as we plant the seeds to a beautiful CSS garden. \n\n Off you go, forming opinions. PC or Mac? Tabs or spaces? quotes or string interpolation? \n\n Look at you now, the Jr Dev. So much has crammed into your head.\n\n\n return.",
-            "featured": true
-        },
-        { 
-            "id": 18, 
-            "name":"Sperry the Dog",
-            "userID": 11,
-            "image":"https://pbs.twimg.com/media/DJfOPAiVYAAzWFB.jpg:large",
-            "title":"I'm a dog",
-            "subTitle":"Bark?",
-            "text":"Sperry's my name and I'm a dog. I sleep most of the day, you could mistake me for a log\n\n My best friend is human, he looks kind funny. I'll eat anything including cumin \n\n I once ate a bee, swallowed it whole. Slept in masters bed and kept him from being cold \n\n I can't jump very high, maybe three inches but height doesn't matter when you are chasing...female dogs \n\n How am I talking? I'm just a dog? My owners a poet forced to write these blogs \n\n Woof woof \n\n Bark Bark \n\n Woof Woof.",
-            "featured": false
-        },
-        {  
-            "id": 19,
-            "name":"Bryan Smith",
-            "userID": 10,
-            "image":"https://avatars1.githubusercontent.com/u/24623425?v=4&s=460",
-            "title":"Your Boy Brennon",
-            "subTitle":"Mentos & Diet Coke",
-            "text":"Hi, I'm Brennon and I hate shoes\n\n My hair is long and I'm spreading the news \n\n I fell down the stairs and met my wife \n\n Learned to code and changed my life \n\n I ride my bike to work \n\n Offering rides on my handlebars \n\n I AM BRENNON \n\n ",
-            "featured": false
-        },
-        {
-            "id": 20,
-            "name": "Andrew Garvin",
-            "userID": 0,
-            "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg (19kB) ",
-            "title": "Here Kitty Kitty",
-            "subTitle": "The story with an un-related title",
-            "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years- NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end.",
-            "featured": false
-        },
-        {
-            "id": 21,
-            "name": "Andi Platter",
-            "userID": 8,
-            "image": "https://cdn-media-2.lifehack.org/wp-content/files/2017/05/24045853/ariel_facepalm_at_scuttle_s_singing_by_arielfan90-daw1w7r.gif",
-            "title": "What is in my pants?!",
-            "subTitle": "A short embarrassing story",
-            "text": "HA okay, so this is a story all about how I embarrassed myself at camp bow wow. Wish I could make that song last for this whole story but no. So I worked at a doggie daycare called camp bow wow a few years ago. There was a guy who worked there as well and he was attractive. \n\n We usually traded shifts so when I came in he was finishing his shift. I had just done my laundry and I pulled my pants out of the dryer and put them on and went to work. When I got there cute boy was about to leave and we chatted for a bit before he did. I went to the back to help out and I touched the back of my leg.\n\n\n. \"OH MY GOSH WHAT IS IN MY PANTS?! I just talked to cute boy for like 10 minutes with a lump on my leg!\" I was so embarrassed and a little concerned. I've never had a tennis ball sized lump on my leg before. Worried I ran to the bathroom and found what was causing this lump... it was a freaking sock. \n\n\n\n How did I not notice there was a balled up sock in my pants? Still not sure, still embarrassed. The End",
-            "featured": true
-        }
-    ],
-    "users": [
-        {
-            "id": 0,
-            "name": "Andrew Garvin"
-        },
-        {
-            "id": 1,
-            "name": "Emily Keator"
-        },
-        {
-            "id": 2,
-            "name": "Brennon Schow"
-        },
-        {
-            "id": 3,
-            "name": "Jeffrey"
-        },
-        {
-            "id": 4,
-            "name": "Chris Anderson"
-        },
-        {
-            "id": 5,
-            "name": "Janise Suski"
-        },
-        {
-            "id": 6,
-            "name":"R. J. Stewart"
-        },
-        {
-            "id": 7,
-            "name":"Thus Saith the Lloyd"
-        },
-        {
-            "id": 8,
-            "name":"Andi Platter"
-        },
-        {
-            "id":9,
-            "name":"David Fischer"
-        },
-        {
-            "id": 10,
-            "name": "Bryan Smith"
-        },
-        {
-            "id": 11,
-            "name":"Sperry the Dog"
-        }
-    ]
+  "blogs": [
+    {
+      "id": 0,
+      "name": "Andrew Garvin",
+      "userID": 0,
+      "image": "http://delivery.gettyimages.com/xr/109072999.jpg?v=1&c=IWSAsset&k=3&d=77BFBA49EF87892102A727B1636DE2E61B7D42B8BC1F6B9121A86BE89F8F9103331E400E51A7E00DE30A760B0D811297",
+      "title": "Ode To Brennys Cow",
+      "subTitle": "A Gold-starred Haiku",
+      "text": "Hello.\n\n I'd like to tell the story of Farmer Brenny, and his cow.\n\n Years ago, in the land and time of St. Siaosi, there lived a man named Mr. Brenny. This man was a young peddler, who's only desire was to become a merchant. Though fortune did not always smile upon him, he felt deep within his heart that someday, he would do great things.\n\n On the ten and seventh day, of the seventh month, in the Year of our Lord, two thousand and seventeen, Mr. Brenny's life was about to change. He did not know this, but on this very day, he would meet Mrs. Anne Drue.\n\n Mrs. Drue was a quaint individual, who was looking for someone to run her family's farm, so that she could travel the world. Upon meeting Mr. Brenny, Anne knew that her search was over.\n\n Anne decided to approach Brennys uncle, Lord Lloyd of Alans Mill, with the intent to hire Brenny for the next seven years. Upon signing the contract, Anne and Mr. Brenny were on their way.\n\n Seven years hence, our young adventurers Anne and Mr. Brenny decided to part ways, after the Kings Captain, Lt. Jaime Robberson moved the battleground of the war to their old-town farm.\n\n\nThe end.",
+      "featured": true
+    },
+    {
+      "id": 1,
+      "name": "Brennon Schow",
+      "userID": 2,
+      "image": "https://en.wikipedia.org/wiki/Llama#/media/File:Domestic_llama_(2009-05-19).jpg",
+      "title": "Se llama llama",
+      "subTitle": "I'm too confused",
+      "text": "Happy llama, sad llama, mentally deranged llama, super llama, drama llama, big, fat, mama llama, duck.",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "name": "Emily Keator",
+      "userID": 1,
+      "image": "http://media2.giphy.com/media/nVXzt7FSJlX7W/giphy.gif",
+      "title": "What to do if you think your mentor is an alien",
+      "subTitle": "It's probably Alan",
+      "text": "If you think that your alien is a mentor, there are several steps to take. \n\n. Report your suspicions to Jeremy, and provide tinfoil hats for the both of you so the alien won't figure it out. \n\n. Ask them if they ate a strange food for breakfast. Aliens, attempting to blend in, will probably say yes. \n\n\n. Create a website that requires them to login and give them the username \"Alien\", and see if they react. If they react then they are an Alien. If they scream at the mention of 'React', then they are probably just an Angular-biased person. \n\n\n\n. Pepper them with questions about their life growing up on Earth. If they get nervous, report them to NASA immediately.",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Jeffrey",
+      "userID": 3,
+      "image": "http://http.cat/418",
+      "title": "I'm a little Teapot",
+      "subTitle": "The Song we all Know and Love",
+      "text": "I'm a little teapot\nshort and stout\nhere is my handle\nhere is my spout\n\nWhen I get all steamed up\nhear me shout\ntip me over\nand pour me out'",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Andrew Garvin",
+      "userID": 0,
+      "image": "http://cdn-image.foodandwine.com/sites/default/files/1470854446/baguette-vending-machine-fwx-1.jpg",
+      "title": "The Devils Baker",
+      "subTitle": "A history of the rick-roll",
+      "text": "The year was 1987. Inflation rates in America were at an all-time 3.66%. 1 LBS of bacon cost $1.80. Supertyphoon Nina struck the Philippines, submerging 14 fishing villages. Life move on.\n\n Beyond these events, something life-changing occured in a small recording studio in a small town. The title: Never Gonna Give You Up.\n\n This song, the solo debut single of singer/song-writer Rick Astley would quickly change the way we browse the internet. \n\n Forever.\n\n Fast-forward to the year 2007. The month was May. The location was 4chan. The clickbait a trailer for the hit video game GTA 4.\n\n Within a year, this viral internet practice quickly gained notice from mainstream media, having reports from magazines like Wired.\n\n In conclusion to this article, we advise all viewers to take caution. You'll never know where Rick will strike, and you'll never truly be prepared.\n\n With the birth of the rick roll, came the death of us all.",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "name": "Chris Anderson",
+      "userID": 4,
+      "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
+      "title": "A Bluegrass Dream",
+      "subTitle": "A Kentucky Boy Stuck in Utah",
+      "text": "Hello, \n If you are reading this I survived the mountain.\n As a Kentuckian I fit right in round these parts, minus the Birkenstocks that everyone seems to wear. I spent many nights wishing on the stars about being home around the Bluegrass, and Kentucky Basketball. It has been a long time since I smelled the sweet scent of HoneySuckle or the sound of horses thundering around the track at Churchill Downs. It has been quite the journey from KY to UT, but one that will not be forgotten. The knowledge bestowed upon me by Brennon, Lloyd, and the long lost Alan will stay with me till the end of time, and for that I am forever grateful. Their guiding spirit has brought me from the dpeths of unknown coding, and stupid questions, to a somewhat knowledgeable coder. For that, I am ever thankful. ",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "Janise Suski",
+      "userID": 5,
+      "image": "http://www.onlinetypingjobs.org/wp-content/uploads/2016/10/typing-jobs.jpg",
+      "title": "The Time A Camera Crew Recorded Me Typing",
+      "subTitle": "Don't Type Louder",
+      "text": "The news crew came to film an interview with Tyler the creator (of DevMountain) and set up the cameras in our classroom. They shot the interview in front of my desk. With the lights in my eyes, I tried to focus on my work and not look directly into the camera. I put on my best poker face, sat up straight and did my work. After they finished the interview, the camera guy came up to me and asked if he could record me typing on my laptop to get a sound byte for their segment. I reluctantly agreed, even though I hate being recorded. He told everyone to be quiet and put the camera really close to my hands. I instantly forgot every single word in the English language and started typing gibberish, really hoping that he wasn't filming my computer screen, which currently looked like, ';al;sdjfaeia;lsdkfa;kea;aosiefa;nfa;esjf'. I thought I heard him say, 'Can you please type louder?' So I started pounding on my keyboard, while still not typing any actual words. Apparently I had been making a face showing my discomfort because, out of the corner of my eye, I saw a group of people watching me, doubled over in silent laughter. At this point, I also realized that the camera man had asked me to type more distinctly, and not louder, because I was still very apparently typing gibberish. After an awkward minute of silence, a large camera pointed at my hands, and an annoyed camera man not getting the shot he wanted because I was still not typing any more distinctly, the camera crew left. I really hope they don't use any of those shots. I don't know if I could handle the fame that comes with the skill of awkwardly typing in a silent, brightly lit classroom.",
+      "featured": true
+    },
+    {
+      "id": 7,
+      "name": "R. J. Stewart",
+      "userID": 6,
+      "image": "https://media.giphy.com/media/11gUHxG1ehyLfy/giphy.gif",
+      "title": "Whiplash Pug",
+      "subTitle": "Not quite my tempo.",
+      "text": "This pug's got the heart, but does he have the rhythm?",
+      "featured": false
+    },
+    {
+      "title": "The Importance of Seperating Work and Home Life",
+      "subTitle": "The consequences of using your precise logic skills and habits can cause stress in your home life.",
+      "image": "https://lh3.googleusercontent.com/MA6g7OwCck51-LNUZUq8t0N6BcG92ROvpWumv25-IrcooWzk9o4BKT_y9YVai89o1V2eb3xFEYF_Y0ij0FMZw-DS8k6Bd6LwIk8qbT5sMmhhhJJnFITI5B23Fvr_CMyYgVYd7TVN7CMslcgflfX_BXtlBD1rS2YAI5NrdCU2B8RhJka0FJMZqzDTh1TFqBQBIiY4jj9g53X6z3MQ4zDGgDhxg8tuPPduZJBY095lG2BsMBrSkO2rrbFZd4mN1e60MLpNH1_MiWYfDOJPB9FugGnmTo9QRwMlD6-dKCkTDFldgImu32zN6AXieY_ziFsbE8-C4LHR0swxR-3B1y5EMyPRlmf4cgmTicVH9OwFEnOHWpmHNT5tLElBoZvSV1R5qG9k4sd4MhO8kwYT9tanGAlntzueUtZNf4hCzNN1_3h1gHWCqcduhrdkGNcUMwIBD7V2q9Mz_9BDoWfC4BdO0CA_wwMMaKYFuU6OugPSLef4YtHoKmu49rC3QJ0k_xm8l-KOt__X7IX6cNnHjh54oTcpAm13MFdxoxE5qv61TQmKIS90K58hbnpd_CWsXhNJQ5CERMRUObwgCEXXJklslH9mEE2SWCv7DAGm0QFcofA=s672-no",
+      "text": "Your skills in logic and precision are highly sought after.\nYou are paid well for those skills, but they have their time and place. That place is not at home.\n\nNow, I'm not saying that you should be illogical or imprecise at home. I am only suggesting that for your own happiness and the happiness of your home you need to allow for more ambiguity and assumptions in your conversations with your significant other, roommates, and children.\n\nWhen someone asks you a question using AND or OR, you may need to format your answer in a way that they can parse.\n\"Would you like to go to Wendy's or Taco Bell for lunch?\" Now, we both know that the answer of \"yes\" means that one of those options is acceptable, but they may not know what you mean. I recommend you say \"either\" before the choices, or the one you prefer.\n\nWhen someone asks you to do several things don't assume that the conditionals are always linked to the entire list.\n\nThe term \"while\" is very similar to what you are familiar with in your programming background, however, you never assume that the condition given with the while is permanent.\n\"While you are out ...\" !== while(youAreOut = true) {//actions here}\n\n\"While you are out ...\" === while(youAreOut === true) {//actions here}\n\nRemember, you are multilingual now and you are going to have a \"fun\" time learning the quirks and syntax of this language and the accompaning APIs (Another-Person Interface).\n\nP.S. Bonus suggestion: take up a hobby not related to programming. It will help you interface with others!",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "Andi Platter",
+      "userID": 8,
+      "image": "https://i.ytimg.com/vi/KG1U8-i1evU/maxresdefault.jpg",
+      "title": "Looking for a job",
+      "subTitle": "ew",
+      "text": "At some point you will have to find a web developer job. You might want to give up and become a trophy wife or a trophy husband. This is so stressful.\n\n If you work hard enough you might be able to get a pet lamb or a dog. Or you will fail and become the troll under the bridge you always identified with as a child.\n\n This is the worst blog post ever, I'm sorry just stop reading now. Unless you would like a few facts about dogs.\n\n\n Puppies can sleep 18 to 20 hours a day during that rapid body growth phase. Pretty cool eh? How about this one: An African wolf dog known as the Basenji is the only dog in the world that cannot bark. Wow so amazing. \n\n\n\n Okay that is all, do good and be smart. Web dev is hard but you're doing great! Hope you liked the dog facts! If you come to the bridge I'll see you there!",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "David Fischer",
+      "userID": 9,
+      "image": "http://soolnua.com/wp-content/themes/soolella/images/ice17/icecream-purple-pink.svg",
+      "title": "Getting a new job",
+      "subTitle": "Ben and Jerry's Ice Cream Flavor Namer",
+      "text": "When looking for a new job the most important thing is finding a job that is fulfilling.  If you really want a job that bring out your creative side I recommend Ben and Jerry's.  You can taste all the ice cream before it hits the market and you get to determine how the market and people will see this for the first time!  \"SQL Caramel Tracks\", and \"Ever Flowing Gooey Coding\" are just a few examples of our recent flavors thanks to me!  Good luck following your dreams!",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "name": "Brennon Schow",
+      "userID": 1,
+      "image": "https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif",
+      "title": "How to host on Digital Ocean",
+      "subTitle": "A step-by-step guide",
+      "text": "1. Create an app. \n\n This guide doesn't claim to teach you any of that fluffy programming nonsense. I expect that you found this guide after you've already built your \"application\". If you haven't learned this yet, then might I interest you in DevMountain School of Witchcraft and Wizardry? http://devmountain.com \n\n2. Create a Digital Ocean droplet. \n\n If you need help with this part, ask a mentor.\n\n 3. Put your app on the Digital Ocean droplet.\n\n\n\n See!? It's as easy as 1, 2, 3. :)"
+    },
+    {
+      "id": 12,
+      "name": "Emily Keator",
+      "userID": 2,
+      "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
+      "title": "How to Win Over Andi Platter, Web Developer",
+      "subTitle": "Just remember: she HATES dogs",
+      "text": "Step 1: Throw the giant rubber duck under the train, she considers it a menace. \nStep 2: Kick a puppy in front of her. \nStep 3: Every tuesday, jump out at her screaming 'SHIA SUPRISE!' \nStep 4: Spell her name with a Y, the way she says it's meant to be spelled. \nStep 5: Offer her a bunch of bananas, she loves them. \nStep 6: complain about how much you hate Sherlock, because she will immediately be drawn to you.",
+      "featured": false
+    },
+    {
+      "id": 13,
+      "name": "Emily Keator",
+      "userID": 2,
+      "image": "https://media.giphy.com/media/12bVDtXPOzYwda/giphy.gif",
+      "title": "How to Smash a Computer",
+      "subTitle": "It's only $1000",
+      "text": "Step 1: Place computer on a solid surface. \nStep 2: Obtain sledgehammer. \nStep 3: Raise hammer above head, 45 degree angle. \nStep 4: ARE YOU CRAZY DON'T SMASH YOUR COMPUTER THAT THING IS EXPENSIVE AND YOU WILL FIND THE ERROR! \nStep 5: Yoga.",
+      "featured": true
+    },
+    {
+      "id": 14,
+      "name": "Emily Keator",
+      "userID": 2,
+      "image": "https://latimesherocomplex.files.wordpress.com/2015/04/ca-0413-the-avengers-153.jpg",
+      "title": "How to De-Bug",
+      "subTitle": "Not recommended for Arachnophobes",
+      "text": "Step 1: Obtain a spider egg from a traveler from a distant land. \nStep 2: Raise your spider to a gigantic size over 20-odd years. \nStep 3: When a bug appears in your code, allow the giant spider to go on a rampage and eat every bug in the building. No humans!! Unless they are annoying. \nStep 4: This is really a terrible idea, but at least you will frighten your enemies.",
+      "featured": true
+    },
+    {
+      "id": 15,
+      "name": "Brennon Schow",
+      "userID": 1,
+      "image": "https://www.funnypica.com/wp-content/uploads/2012/06/Funny-Goat-01.jpg",
+      "title": "Who Are You",
+      "subTitle": "Who Are You, Really?",
+      "text": "Who are you? Really, who are you? I mean, who are you *really*? Look inside yourself and ask, \"Who am I?\" You might be surprised what you find, and the best prize is a SURprise. So I ask again, who are you?",
+      "featured": false
+    },
+    {
+      "id": 16,
+      "name": "Andrew Garvin",
+      "userID": 0,
+      "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
+      "title": "Here Kitty Kitty",
+      "subTitle": "The story with an un-related title",
+      "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years - NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\n\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end"
+    },
+    {
+      "id": 17,
+      "name": "Bryan Smith",
+      "userID": 10,
+      "image": "https://static1.squarespace.com/static/58680ce2d1758e371522bf7f/5868b4695016e16d593b7a3d/58db1d895016e15e289c9b3d/1490759681172/Opa.JPG?format=2500w",
+      "title": "It's just code, Bro",
+      "subTitle": "An Ode to Code",
+      "text": "'Hello, world!' The students would type, Learning to code both day and night.\n\n for loops, if statements, React and const, learning this stuff might take you several months. \n\n Lucky for you, DevMountain is here. Lets change that career path for this is your year! \n\n You'll decide between Atom, Sublime and VSCode while we take you down this road we know as Node. \n\n content, padding, border and margin? Join us as we plant the seeds to a beautiful CSS garden. \n\n Off you go, forming opinions. PC or Mac? Tabs or spaces? quotes or string interpolation? \n\n Look at you now, the Jr Dev. So much has crammed into your head.\n\n\n return.",
+      "featured": true
+    },
+    {
+      "id": 18,
+      "name": "Sperry the Dog",
+      "userID": 11,
+      "image": "https://pbs.twimg.com/media/DJfOPAiVYAAzWFB.jpg:large",
+      "title": "I'm a dog",
+      "subTitle": "Bark?",
+      "text": "Sperry's my name and I'm a dog. I sleep most of the day, you could mistake me for a log\n\n My best friend is human, he looks kind funny. I'll eat anything including cumin \n\n I once ate a bee, swallowed it whole. Slept in masters bed and kept him from being cold \n\n I can't jump very high, maybe three inches but height doesn't matter when you are chasing...female dogs \n\n How am I talking? I'm just a dog? My owners a poet forced to write these blogs \n\n Woof woof \n\n Bark Bark \n\n Woof Woof.",
+      "featured": false
+    },
+    {
+      "id": 19,
+      "name": "Bryan Smith",
+      "userID": 10,
+      "image": "https://avatars1.githubusercontent.com/u/24623425?v=4&s=460",
+      "title": "Your Boy Brennon",
+      "subTitle": "Mentos & Diet Coke",
+      "text": "Hi, I'm Brennon and I hate shoes\n\n My hair is long and I'm spreading the news \n\n I fell down the stairs and met my wife \n\n Learned to code and changed my life \n\n I ride my bike to work \n\n Offering rides on my handlebars \n\n I AM BRENNON \n\n ",
+      "featured": false
+    },
+    {
+      "id": 20,
+      "name": "Andrew Garvin",
+      "userID": 0,
+      "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg (19kB) ",
+      "title": "Here Kitty Kitty",
+      "subTitle": "The story with an un-related title",
+      "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years- NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end.",
+      "featured": false
+    },
+    {
+      "id": 21,
+      "name": "Andi Platter",
+      "userID": 8,
+      "image": "https://cdn-media-2.lifehack.org/wp-content/files/2017/05/24045853/ariel_facepalm_at_scuttle_s_singing_by_arielfan90-daw1w7r.gif",
+      "title": "What is in my pants?!",
+      "subTitle": "A short embarrassing story",
+      "text": "HA okay, so this is a story all about how I embarrassed myself at camp bow wow. Wish I could make that song last for this whole story but no. So I worked at a doggie daycare called camp bow wow a few years ago. There was a guy who worked there as well and he was attractive. \n\n We usually traded shifts so when I came in he was finishing his shift. I had just done my laundry and I pulled my pants out of the dryer and put them on and went to work. When I got there cute boy was about to leave and we chatted for a bit before he did. I went to the back to help out and I touched the back of my leg.\n\n\n. \"OH MY GOSH WHAT IS IN MY PANTS?! I just talked to cute boy for like 10 minutes with a lump on my leg!\" I was so embarrassed and a little concerned. I've never had a tennis ball sized lump on my leg before. Worried I ran to the bathroom and found what was causing this lump... it was a freaking sock. \n\n\n\n How did I not notice there was a balled up sock in my pants? Still not sure, still embarrassed. The End",
+      "featured": true
+    },
+    {
+      "title": "Testing",
+      "subTitle": "provo",
+      "image": "https://unsplash.it/700/400",
+      "text": "dasj;lfksjfl;aksdjflaskj",
+      "id": 22
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "Andrew Garvin",
+      "img": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
+      "desc": "I’m all about that bass… And by bass I mean I’m just super cool, ya know? Specialities include Dad Jokes, Programming, Wakeboarding, and other st00f"
+    },
+    {
+      "id": 1,
+      "name": "Emily Keator",
+      "img": "https://s1.postimg.org/71h3b5nlj3/IMG_3987.jpg",
+      "desc": "Emily Keator grew up in Florida but likes to deny it, and graduated from Davidson College with a degree in biology. If you interrupt her reading, she will bite you."
+    },
+    {
+      "id": 2,
+      "name": "Brennon Schow",
+      "img": "https://s1.postimg.org/3zxyo3yc7z/headshot.png",
+      "desc": "I've found that I'm constantly breathing oxygen whether I mean to or not, and I've contributed to the gene pools of two small humans."
+    },
+    {
+      "id": 3,
+      "name": "Jeffrey",
+      "img": "",
+      "desc": ""
+    },
+    {
+      "id": 4,
+      "name": "Chris Anderson",
+      "img": "",
+      "desc": ""
+    },
+    {
+      "id": 5,
+      "name": "Janise Suski",
+      "img": "",
+      "desc": ""
+    },
+    {
+      "id": 6,
+      "name": "R. J. Stewart",
+      "img": "",
+      "desc": ""
+    },
+    {
+      "name": "Thus Saith the Lloyd",
+      "img": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t1.0-9/12193590_10154290494784119_4013117012609151879_n.jpg?oh=b1190eb6fa8306c29512290bd2c6180d&oe=5A810FE2",
+      "desc": "Mentor Extraordinaire! Modern Renascence Man. Adrenaline Aficionado.",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "Andi Platter",
+      "img": "https://preview.ibb.co/mKG7GG/Screen_Shot_2017_10_10_at_3_29_12_PM.png",
+      "desc": "Loves dogs"
+    },
+    {
+      "id": 9,
+      "name": "David Fischer",
+      "img": "",
+      "desc": ""
+    },
+    {
+      "id": 10,
+      "name": "Bryan Smith",
+      "img": "https://static1.squarespace.com/static/58680ce2d1758e371522bf7f/5868b4695016e16d593b7a3d/58db1d895016e15e289c9b3d/1490759681172/Opa.JPG?format=2500w",
+      "desc": "I'm in there somewhere"
+    },
+    {
+      "id": 11,
+      "name": "Sperry the Dog",
+      "desc": "Woof",
+      "img": ""
+    },
+    {
+      "id": 12,
+      "name": "Leo",
+      "img": "https://unsplash.it/300/?random",
+      "desc": "I'm not real. I'm just a pseudonym of a guy that doesn't like waiting for fast food workers to figure out how to spell his name."
+    }
+  ]
 }

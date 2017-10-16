@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+
 import ConfirmModal from './subcomponents/ConfirmModal';
 
+// import axios
 
 
 class Edit extends Component {
@@ -16,16 +18,15 @@ class Edit extends Component {
         this.yes = this.yes.bind(this);
         this.no = this.no.bind(this);
     }
-    // Insert a componentDidMount method that does an axios request for the blog indicated by the param in the url
+
+    // insert componentWillMount
+
+    
+    // insert updatePost 
     
 
-    // Insert Submit function here that will use an Axios request:
-    
+    // Insert into the deletePost 
 
-    // Insert into the deleteBlog method an axios delete request 
-    deletePost(){
-        
-    }
     
     render() {
         let {title, subTitle, image, text} = this.state;

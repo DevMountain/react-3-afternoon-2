@@ -2,26 +2,27 @@ import React, { Component } from 'react';
 import Hero from './subcomponents/Hero';
 import BlogThumb from './subcomponents/BlogThumb';
 
-
+// import axios
 
 class Home extends Component{
     constructor(){
         super();
         this.state = {
-            featured: [{image: 'https://unsplash.it/900/400/?random'}],
             index: 0,
-            posts: []
+            posts: [{title: "Loading...",image: 'https://unsplash.it/900/400/?random'}]
         }
     }
 
-    // Make a componentDidMount method here:
+    // insert componentWillMount:
+    
 
     render(){
-        // map over your recommended blogs here
-        const posts = this.state.posts.map((c,i)=><BlogThumb key={i} blog={c}/>)
+        // map over your recommended blogs here, replace null.
+        const posts = null
+
         return(
             <div className="content" >
-                <Hero blog={this.state.featured[this.state.index]} />
+                <Hero blog={this.state.posts[this.state.index]} />
                 <hr/>
                 <div className="blog-grid">
                     {/* put your mapped blogs here */}

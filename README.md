@@ -32,6 +32,13 @@ To use axios you will import it into any component or Javascript file in which y
 
 `import axios from 'axios';`
 
+## NPM Start
+
+After all the packages have installed, start up the project by running `npm start`.
+
+If you have installed axios and the other default npm packages, you should see a non-functional blog website.
+
+
 #### Methods
 For each type of HTTP request you will use the appropriate axios method:
 
@@ -120,11 +127,13 @@ Blog Post:
 }
 ```
 
-User: 
+Post User: 
 
 ```javascript
 {
-    name: "Andrew Garvin"
+    "name": "Andrew Garvin",
+    "img": "https://unsplash.it/300/?random",
+    "desc": "Descriptions are over rated, unlike Rick Rolls."
 }
 ```
 
@@ -134,10 +143,19 @@ Open the Home.js file in the components folder.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-Now, you will make a `componentDidMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
+
+Now, you will make a `componentWillMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
 
 Using the `.then` function on the axios call, set the `featured` property in state to the appropriate data in the results.
 
+Set the data to the `posts` property on state and set `index` to `(~~(Math.random() * results.data.length) + 0)` (this will randomly select a post to feature on the homepage).
+
+Now, in the `render` method before the `return`, map over the `posts` array and assign each blog post object into a `<BlogThumb />` component. The `BlogThumb` component will display the prop called `blog`.
+
+E.g.:
+`const posts = this.state.posts.map((c,i)=><BlogThumb key={i} blog={c}/>)`
+
+Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
 
 <details>
 <summary><b>Code Solution</b></summary>
@@ -145,18 +163,22 @@ Using the `.then` function on the axios call, set the `featured` property in sta
 <summary><code>src/components/Home.js</code></summary>
 
 ```javascript
-componentDidMount(){
+...
+componentWillMount(){
     axios.get('/api/featured').then(results=>{
         this.setState({
-            featured: results.data
-        })
-    })
-    axios.get(`/api/blogs`).then(results=>{
-        this.setState({
+            featured: results.data,
+            index: (~~(Math.random() * results.data.length) + 0),
             posts: results.data
         })
-    })
+    }).catch(console.log)   
 }
+    render(){
+        // map over your recommended blogs here
+        const posts = this.state.posts.map((c,i)=><BlogThumb key={i} blog={c}/>)
+
+        return(
+...
 ```
 
 </details>
@@ -169,16 +191,13 @@ Next we are going to add axios to the Blog.js component.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-This axios request will also be in the `componentDidMount` method.
-
 The endpoint will be at `/api/blog/:id`. The `:id` is a parameter. Meaning that the http request will send whatever is after the `/` as a variable to select the corresponding blog from the api. For example: `/api/blog/5` indicates to the api to get the blog with an id of `5`.
 
 This parameter is being used in the React routing also. You can access the parameter in react thusly: `this.props.match.params.id` in this case.
 
-Append the blog id to the api endpoint.
+In a `componentWillMount` method, make an `axios.get` call to `/api/blog/id` with the id property from `this.props.match.params` filling the `id` spot in the URL. `console.log` the response in the `.then` and find what data needs to be set to `state`. 
 
-Assign the results to the `blog` property on state.
-
+Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
 
 <details>
 <summary><b>Code Solution</b></summary>
@@ -186,13 +205,15 @@ Assign the results to the `blog` property on state.
 <summary><code>src/components/Blog.js</code></summary>
 
 ```javascript
+...
 componentDidMount(){
     axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
         this.setState({
             blog: results.data
         })
-    })
+    }).catch(console.log)
 }
+...
 ```
 
 </details>
@@ -204,15 +225,27 @@ Next we are going to add axios to the Search.js component.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-This axios request will be in a method you will make called `search`.
+This axios request will be in a method you will make called `search`. `search` will take in a single parameter `event`. Begin by invoking `event.preventDefault()`. HTML forms like the one we're using naturally refresh the page on submit. That's ugly, so we're using preventDefault to make it not happen.
 
-The endpoint will be at `/api/blogs`. 
+`search` is going to allow us to search by both blogs and users, which makes for some pretty interesting code. If you look at the state object in our constructor, you'll see a property called `searchType`. We've set up your UI so that that updates based on a radio button. Since we want to be able to search two different groups, we'll technically need two different URLs -- `/api/blogs` and `/api/users`. Luckily it's pretty easy to inject variables into strings, meaning we can have one *dynamic* URL.
 
-You are going to append a query to the end of the endpoint.
+In our `axios.get` call, all we have to do is reference `this.state.searchType` in our URL string. The most current way to this is with a template string (use backticks instead of quotes) and variable injection (like this: `${variableName}`). So, if you make a get request to `/api/${this.state.searchType}`, you'll have a dynamic URL since searchType changes.
 
-Queries are in the format: `?[keyName]=[value]` ie: `?q=how to get a job`
+This is only halfway though. We still need to account for a changing search input. Lets add a query to the end of the URL. Queries are built like this: `?[keyName]=[value]` ie: `?q=how to get a job`. For our purposes, we need our query to be dynamic too. Try and use the same idea taught above to create a dynamic query at the end of your URL. 
 
-Assign the results to the `blog` property on state.
+Now we need to separate our results to either `this.state.blogResults` or `this.state.userResults`. We can evaluate the `searchType` property on state to verify where our response needs to go. Create an `if` statement that assigns `response.data` to `this.state.blogResults` if `this.state.searchType` is `'blogs'`. Otherwise, set the data to `this.state.usersResults`.
+
+Map over both `this.state.blogResults` and `this.state.userResults`, passing each element into `<BlogTile />` or `<UserTile />` respectively, and set the blogs to a variable called `blogResults` and users to `userResults`.
+
+Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
+
+#### Bonus
+
+You'll notice that if we hit the back arrow our search history isn't preserved. To remedy that, paste this line into the top of your `if` and `else` statements: 
+
+```javascript
+this.props.history.push(makeQuery('/search?',{q:searchTerm,type:searchType}))
+```
 
 
 <details>
@@ -221,13 +254,36 @@ Assign the results to the `blog` property on state.
 <summary><code>src/components/Search.js</code></summary>
 
 ```javascript
-search(){
-    axios.get(`/api/blogs/?q=${this.state.searchTerm}`).then(results=>{
-        this.setState({
-            searchResults: results.data
-        })
-    })
-}
+...
+search(e){
+        e.preventDefault()
+        const { searchTerm, searchType }=this.state
+        
+        axios.get(`/api/${searchType}?q=${searchTerm}`).then(response=>{
+            if(searchType==='blogs'){
+                this.props.history.push(makeQuery('/search?',{q:searchTerm,type:searchType}))
+                this.setState({
+                    blogResults: response.data,
+                    userResults: []
+                })
+            }else{
+                this.props.history.push(makeQuery('/search?',{q:searchTerm,type:searchType}))
+                this.setState({
+                    blogResults: [],
+                    userResults: response.data
+                })
+            }
+        }).catch(console.log)
+    }
+    
+    
+    render(){
+        // map over the searchResults here
+        const blogResults = this.state.blogResults.map((c,i)=> <BlogTile key={i} blog={c}/> )
+        const userResults = this.state.userResults.map((c,i)=> <UserTile key={i} user={c}/>)
+
+        return(
+...
 ```
 
 </details>
@@ -239,9 +295,30 @@ Next we are going to add axios to the Add.js component.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-This axios request will be in a method you will make called `post`.
+Initialize a method called `post`. It will not take in any arguments. For this section, since we'll be sending data to the server, we will me making a POST request. `axios.post` takes in two arguments: the back end URL and a `body` object.
 
-The endpoint will be at `/api/blog`.
+First we'll set up our `body` object. Create a variable called `body` that is formatted like this:
+
+```javascript
+{
+    title: this.state.title,
+    subTitle: this.state.subTitle,
+    image: this.state.image,
+    text: this.state.text
+} 
+```
+
+Now we'll make our post request. The endpoint will be `/api/blogs`, and the second argument will be our `body` variable. 
+
+Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting. 
+
+#### Bonus
+
+The UI is already set up so that the buttons work, but it still doesn't feel right to be left on the same page after something's changed. Let's make use of `this.props.history.push` again. At the end of your post method, add this line:
+
+```javascript
+this.props.history.push(`/blog/${results.data.id}`)
+```
 
 
 <details>
@@ -256,7 +333,7 @@ post(){
         this.setState({
             searchResults: results.data
         })
-    })
+    }).catch(console.log)
 }
 ```
 
@@ -270,21 +347,27 @@ Next we are going to add axios to the Edit.js component.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-This axios requests will be in a several methods you will make: `componentDidMount`, `updatePost`, and `deletePost`.
+This time there are going to be three `axios` requests made from `componentWillMount`, `updatePost`, and `deletePost` methods.
 
-The `componentDidMount` method will be using a `get` request.
+The `componentWillMount` method will be using a GET request.
 
-The `updatePost` method will be using a `put` request.
+The `updatePost` method will be using a PUT request.
 
-The `deletePost` method will be using a `delete` request.
+The `deletePost` method will be using a DELETE request.
 
-The endpoint for all requests will be at `/api/blog/:id`.
-You should notice that we are using a parameter again.
-This will be available via: `this.props.match.params.id`
+The endpoint for all requests will be at `/api/blog/:id`. You should notice that we are using a URL parameter again. This will be available via: `this.props.match.params.id`. The URL will need to be dynamic, so use backticks and variable injection again.
 
-Your `get` request will set the blog property on state. 
+Let's start with `componentWillMount`. This is where we'll make a GET request for the selected blog post. In the `.then` of the get request, we'll parse out our `response.data` into multiple properties on `this.state`. Try and decide what properties those might be by using `console.log` on `response.data`. As always, add `.catch(console.log)` after `.then`
 
-The `put` request will route to the newly updated blog. Put in the callback of your `.then` method the following line: 
+Now we'll create the `updatePost` method for the PUT request. This is where our edit function comes from. A PUT request tells the server that you're changing some information that already exists, rather than adding new information. `axios.put` is set up the same way as `axios.post` -- two arguments: endpoint and body object. Follow the same pattern from `Add.js`. Don't forget `.catch(console.log)`
+
+We'll make our DELETE request from a `deletePost` method. `axios.delete` only takes one argument, a URL. 
+
+#### Bonus
+
+We have routing problems again.
+
+Let's route to the blog that we update from `updatePost` after we've updated it. Add the following line to the `.then`: 
 
 ```javascript
 this.props.history.push(`/blog/${this.props.match.params.id}`)
@@ -302,36 +385,134 @@ this.props.history.push('/search')
 <summary><code>src/components/Edit.js</code></summary>
 
 ```javascript
-componentDidMount(){
-    axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
-        this.setState({
-            blog: results.data
-        })
-    })
-}
+...
+    componentWillMount(){
+        axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
+            let blog = results.data
+            this.setState({
+                title: blog.title,
+                subTitle: blog.subTitle,
+                image: blog.image,
+                text: blog.text,
+                original: blog
+            })
+        }).catch(console.log)
+    }
 
-updatePost(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
-    axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
-        this.props.history.push(`/blog/${this.props.match.params.id}`)
-    })
-}
 
-deletePost(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
-    axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
-        this.props.history.push('/search')
-    })
-}
+    updatePost(){
+        let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
+        axios.put(`/api/blogs/${this.props.match.params.id}`, body).then(results=>{
+            this.props.history.push(`/blog/${this.props.match.params.id}`)
+        }).catch(console.log)
+    }
+
+
+    deletePost(){
+        axios.delete(`/api/blogs/${this.props.match.params.id}`).then(results=>{
+            this.props.history.push('/search')
+        }).catch(console.log)
+    }
+...
 ```
 
 </details>
 </details>
 
 
-## User
+## Users
+
+We're now going to mainly repeat the concepts we just used but for users. We'll need a way to add a user (using a POST request), update a user (using a PUT request), and delete a user (using a DELETE request). All of these methods will be built on `NewUser.js` and will be aptly named `addUser`, `updateUser`, and `deleteUser`. 
+
+Additionally we will need to make a GET request in the `componentWillMount` on `User.js` in order to populate the UI with the correct information.
+
+#### Bonus
+
+Let's fix our routing, starting with `NewUser.js`
+
+In `addUser` and update, let's redirect to the new user.
+```javascript
+this.props.history.push(`/user/${user.id}`)
+```
+
+in `deleteUser` let's redirect to the search page.
+```javascript
+this.props.history.push(`/search/`)
+```
+
+<details>
+<summary><b>Code Summary</b></summary>
+<details>
+<summary><b>src/components/NewUser.js</b></summary>
+
+```javascript
+...
+    // insert addUser
+    addUser(){
+        axios.post('/api/users', this.state).then(response=>{
+            console.log(response)
+            let user = response.data
+            this.props.history.push(`/user/${user.id}`)
+        })
+    }
+
+    // insert updateUser    
+    updateUser(){
+        let id = this.props.match.params.id        
+        axios.put(`/api/user/${id}`, this.state).then(response=>{
+            console.log(response)
+            let user = response.data
+            this.props.history.push(`/user/${user.id}`)
+        })
+    }
+
+    // insert deleteUser
+    deleteUser(){
+        let id = this.props.match.params.id
+        axios.delete(`api/user/${id}`).then(response=>{
+            this.props.history.push(`/search`)
+        })
+    }
+...
+```
+
+</details>
+<details>
+<summary><b>src/components/User.js</b></summary>
+
+```javascript
+...
+    componentWillMount(){
+        let userID = this.props.match.params.id;
+        axios.get(`/api/user/${userID}`).then(response=>{
+            let user = response.data
+            this.setState({
+                user: user
+            })
+        })
+        axios.get(`/api/blogs?userID=${userID}`).then(response=>{
+            console.log(response);
+            this.setState({
+                posts: response.data
+            })
+        })
+    }
+...
+```
+
+</details>
+</details>
 
 
+## Black Diamond
+
+When multiple HTTP requests are run concurrently, you can ensure that the callback function for both promises are run simultaneously by using `axios.all`.
+
+Go look at the axios documentation to see how to implement this. <a href="https://github.com/axios/axios">Axios Documentation: Github</a>
+
+This would be best used in this project in the `User.js` file.
+
+Use `axios.all` to get the user data and the blog posts data and set them both on state simultaneously.
 
 ## Contributions
 
