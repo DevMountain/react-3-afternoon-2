@@ -314,7 +314,7 @@ Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
 
 #### Bonus
 
-The UI is already set up so that the buttons work, but it still doesn't feel right to be left on the same page after something's changed. Let's make use of `this.props.history.push` again. At the end of your .then() method, add this line:
+The UI is already set up so that the buttons work, but it still doesn't feel right to be left on the same page after something's changed. Let's make use of `this.props.history.push` again. Inside your .then() method, add this line:
 
 ```javascript
 this.props.history.push(`/blog/${results.data.id}`)
