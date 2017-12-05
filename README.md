@@ -2,7 +2,7 @@
 
 # Http-afternoon Project
 
-## Setup
+# Setup
 First you will need to fork and clone this repo and install the necessary npm packages.
 
 #### Fork and Clone
@@ -14,7 +14,6 @@ Next cd into the new project folder:
 `cd http-afternoon`
 
 Then you will need to install the required react packages by running:
-
 `npm install`
 
 You can make sure the project is ready to work on by running: 
@@ -37,6 +36,9 @@ To use axios you will import it into any component or Javascript file in which y
 After all the packages have installed, start up the project by running `npm start`.
 
 If you have installed axios and the other default npm packages, you should see a non-functional blog website.
+
+
+# Important Information
 
 
 #### Methods
@@ -137,6 +139,8 @@ Post User:
 }
 ```
 
+# Step 1: 
+
 ## Home view
 
 Open the Home.js file in the components folder.
@@ -185,7 +189,7 @@ componentWillMount(){
 </details>
 
 
-
+# Step 2 
 ## Blog
 Next we are going to add axios to the Blog.js component.
 Import axios near the top of the file:
@@ -219,10 +223,12 @@ componentDidMount(){
 </details>
 </details>
 
+# Step 3
+
 ## Search
 
-Next we are going to add axios to the Search.js component.
-Import axios near the top of the file:
+Next we are going to go to the Search.js component.
+We have already imported axios near the top of the file for you.
 `import axios from 'axios';`
 
 This axios request will be in a method you will make called `search`. `search` will take in a single parameter `event`. Begin by invoking `event.preventDefault()`. HTML forms like the one we're using naturally refresh the page on submit. That's ugly, so we're using preventDefault to make it not happen.
@@ -235,7 +241,10 @@ This is only halfway though. We still need to account for a changing search inpu
 
 Now we need to separate our results to either `this.state.blogResults` or `this.state.userResults`. We can evaluate the `searchType` property on state to verify where our response needs to go. Create an `if` statement that assigns `response.data` to `this.state.blogResults` if `this.state.searchType` is `'blogs'`. Otherwise, set the data to `this.state.usersResults`.
 
-Map over both `this.state.blogResults` and `this.state.userResults`, passing each element into `<BlogTile />` or `<UserTile />` respectively, and set the blogs to a variable called `blogResults` and users to `userResults`.
+Map over `this.state.blogResults`, passing each element into `<BlogTile />`. Be sure to add a key property passing in the index of each element and a blog property passing in the element itself. Set the result to the variable called `blogResults`.
+
+Map over `this.state.userResults`, passing each element into `<UserTile />`. Be sure to add a key property passing in the index of each element and a user property passing in the element itself. Set the result to the variable called `userResults`.
+
 
 Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
 
@@ -289,13 +298,15 @@ search(e){
 </details>
 </details>
 
+# Step 4
+
 ## Add
 
 Next we are going to add axios to the Add.js component.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-Initialize a method called `post`. It will not take in any arguments. For this section, since we'll be sending data to the server, we will me making a POST request. `axios.post` takes in two arguments: the back end URL and a `body` object.
+Initialize a method called `post`. It will not take in any arguments. For this section, since we'll be sending data to the server, we will be making a POST request. `axios.post` takes in two arguments: the back end URL and a `body` object.
 
 First we'll set up our `body` object. Create a variable called `body` that is formatted like this:
 
@@ -338,6 +349,7 @@ post(){
 </details>
 </details>
 
+# Step 5
 
 ## Edit
 
@@ -417,12 +429,19 @@ this.props.history.push('/search')
 </details>
 </details>
 
+# Step 6
 
-## Users
+## NewUsers
+
+Next we are going to add axios to the NextUser.js component. Import axios near the top of the file: `import axios from 'axios'`;
 
 We're now going to mainly repeat the concepts we just used but for users. We'll need a way to add a user (using a POST request), update a user (using a PUT request), and delete a user (using a DELETE request). All of these methods will be built on `NewUser.js` and will be aptly named `addUser`, `updateUser`, and `deleteUser`. 
 
-Additionally we will need to make a GET request in the `componentWillMount` on `User.js` in order to populate the UI with the correct information.
+In the `NewUser.js` component create the addUser method which will make a post request to `/api/users` and pass in this.state as the second parameter to request. Set the response in your .then to a variable called user.
+
+Now create the updateUser method which will make a put request to the `/api/users/id`. The id will come from `this.props.match.params.id`. The second parameter on this put request will be this.state. Set the response in your .then to a verable called user.
+
+Next create the deleteUser method which will make a delete request to the `/api/user/id`. The id will come from `this.props.match.params.id`. For now you don't need to put anything into your .then.
 
 #### Bonus
 
@@ -437,6 +456,17 @@ in `deleteUser` let's redirect to the search page.
 ```javascript
 this.props.history.push(`/search/`)
 ```
+
+## User
+
+Next we are going to add axios to the User.js component. Import axios near the top of the file: `import axios from 'axios'`;
+
+We will need to make a GET request in the `componentWillMount` on `User.js` in order to populate the UI with the correct information. 
+
+You will be making two get requests within `componentWillMount`. The first will be to `/api/user/id`. You will get the id from `this.props.match.params.id`. Set the user property on state with the data from the response of the api call. 
+
+ The second will be to `/api/blogs` but will have a query where `userID` is equal to `this.props.match.params.id`. Set the posts property on state with the data from the response of the api call.
+
 
 <details>
 <summary><b>Code Summary</b></summary>
@@ -502,7 +532,7 @@ this.props.history.push(`/search/`)
 </details>
 
 
-## Black Diamond
+# Black Diamond
 
 When multiple HTTP requests are run concurrently, you can ensure that the callback function for both promises are run simultaneously by using `axios.all`.
 

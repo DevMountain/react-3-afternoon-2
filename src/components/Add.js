@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import ConfirmModal from './subcomponents/ConfirmModal';
 
 // import axios
