@@ -241,9 +241,9 @@ This is only halfway though. We still need to account for a changing search inpu
 
 Now we need to separate our results to either `this.state.blogResults` or `this.state.userResults`. We can evaluate the `searchType` property on state to verify where our response needs to go. Create an `if` statement that assigns `response.data` to `this.state.blogResults` if `this.state.searchType` is `'blogs'`. Otherwise, set the data to `this.state.usersResults`.
 
-Map over `this.state.blogResults`, passing each element into `<BlogTile />`. Be sure to add a key property passing in the index of each element and a blog property passing in the element itself. Set the result to the variable called `blogResults`.
+Map over `this.state.blogResults`, passing each element into `<BlogTile />`. Be sure to add a key attribute passing in the index of each element and a blog attribute passing in the element itself. Set the result to the variable called `blogResults`.
 
-Map over `this.state.userResults`, passing each element into `<UserTile />`. Be sure to add a key property passing in the index of each element and a user property passing in the element itself. Set the result to the variable called `userResults`.
+Map over `this.state.userResults`, passing each element into `<UserTile />`. Be sure to add a key attribute passing in the index of each element and a user attribute passing in the element itself. Set the result to the variable called `userResults`.
 
 
 Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
