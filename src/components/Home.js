@@ -8,6 +8,7 @@ class Home extends Component{
     constructor(){
         super();
         this.state = {
+            featured: '',
             index: 0,
             posts: [{title: "Loading...",image: 'https://unsplash.it/900/400/?random'}]
         }
