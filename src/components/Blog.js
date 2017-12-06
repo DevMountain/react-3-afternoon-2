@@ -12,7 +12,7 @@ class Blog extends Component{
         }
     }
 
-    // insert componentWillMount method
+    // insert componentDidMount method
 
     
     render(){
