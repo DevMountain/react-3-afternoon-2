@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from './../../assets/blogMtn.svg';
+import './Header.css';
 
 class Header extends Component{
   render() {
     return (
-      <header className='app-header'>
-        <Link className="nav-link" to='/'>
-          <img className='logo' src={ logo } alt=""/>
+      <header className='Header__container'>
+        <Link className="Header__link" to='/'>
+          <img className='Header__logo' src={ logo } alt=""/>
         </Link>
 
-        <Link className="nav-link" to='/search'>Search</Link>
-        <Link className="nav-link" to='/add'>Add Post</Link>
-        <Link className="nav-link" to="/user">New User</Link>
+        <Link className="Header__link" to='/search'>Search</Link>
+        <Link className="Header__link" to='/add'>Add Post</Link>
+        <Link className="Header__link" to="/user">New User</Link>
       </header>
     )
   }

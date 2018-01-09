@@ -1,0 +1,20 @@
+.Hero__container {
+  width: 900px;
+  height: 400px;
+  color: white;
+  text-shadow: 1px 1px 6px #111, -1px -1px 6px #111;
+  display: grid;
+  grid-template-rows: 1fr 80px 50px;
+  justify-items: center;
+  align-items: center;
+  background-size: cover;
+  padding: 15px;
+}
+
+.Hero__container h1 {
+  grid-row: 2/3;
+}
+
+.Hero__container h3 {
+  grid-row: 3/4;
+}
