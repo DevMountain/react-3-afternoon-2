@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ConfirmModal from './subcomponents/ConfirmModal';
+import ConfirmModal from '../ConfirmModal/ConfirmModal';
 
 // import axios
 
@@ -30,7 +30,7 @@ class Edit extends Component {
     render() {
         let {title, subTitle, image, text} = this.state;
         return (
-            <div className='content'>
+            <div className='parent'>
                 <div className="add-blog">
                     <div className="input-group">
                         <label htmlFor="">Title</label>
@@ -49,7 +49,7 @@ class Edit extends Component {
                         <textarea value={text} onChange={e=>this.textChange(e.target.value)} placeholder="Blog here!" />
                     </div>
                     <div className="buttons">
-                        <button onClick={_=>this.delete()} className='delete-button' >Delete</button>
+                        <button onClick={_=>this.delete()} className='delete-button'>Delete</button>
                         <button onClick={_=>this.cancel()} className='cancel-button'>Cancel</button>
                         <button onClick={_=>this.updatePost()} >Update</button>
                     </div>

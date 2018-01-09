@@ -1,13 +1,61 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-button{
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: calc(100vh - 80px);
+  padding-top: 25px;
+}
+
+.input-group {
+  display: grid;
+  width: 100%;
+  justify-self: left;
+  grid-template-columns: 90px 1fr;
+}
+
+.input-group label {
+  margin-right: 15px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.text-input {
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 1fr;
+}
+
+.text-input label {
+  justify-self: left;
+}
+
+.text-input textarea {
+  width:100%;
+  height:100%;
+  align-self: center;
+  justify-self: center;
+  resize: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.buttons {
+  max-width: 250px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
   background-color: rgb(22, 90, 175);
   color: white;
   border: none;
@@ -17,25 +65,24 @@ button{
   cursor: pointer;
   min-width: 65px;
 }
+
 button:active{
   background-color: rgb(14, 57, 110);
 }
-.cancel-button{
+
+.cancel-button {
   background-color: #555
 }
-.cancel-button:active{
+
+.cancel-button:active {
   background-color: #333
 }
-.delete-button{
-  background-color: firebrick;
-}
-.delete-button:active{
-  background-color: rgb(110, 25, 25);
-}
-a{
+
+a {
   text-decoration: none;
   color: inherit;
 }
+
 .app-header {
   background-color: rgb(22, 120, 200);
   width: 100%;
@@ -51,30 +98,21 @@ a{
   z-index: 5px;
 }
 
-.logo{
+.logo {
   width: 130px;
 }
 
-.nav-link{
+.nav-link {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   background-color: rgb(22, 90, 175);
 }
-
-
-.content{
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  min-height: calc(100vh - 80px);
-  padding-top: 25px;
-}
-
 
 .hero-container{
   width: 900px;
@@ -88,14 +126,16 @@ a{
   background-size: cover;
   padding: 15px;
 }
-.hero-container h1{
+
+.hero-container h1 {
   grid-row: 2/3;
 }
-.hero-container h3{
+
+.hero-container h3 {
   grid-row: 3/4;
 }
 
-.thumb-container{
+.thumb-container {
   width: 200px;
   height: 200px;
   background-color: #777;
@@ -112,14 +152,16 @@ a{
   padding: 15px;
   cursor: pointer;
 }
-.thumb-container:hover{
+
+.thumb-container:hover {
   grid-template-rows: 1fr 3fr;
 }
 
-.search-view{
+.search-view {
   grid-template-rows: 41px 1fr;
 }
-.search-group{
+
+.search-group {
   font-weight: bold;
   width: 60%;
   display: grid;
@@ -206,90 +248,6 @@ a{
   display: grid;
   grid-template-rows: repeat(3, 30px) 1fr 50px;
   grid-gap: 15px;
-}
-
-.input-group{
-  display: grid;
-  width: 100%;
-  justify-self: left;
-  grid-template-columns: 90px 1fr;
-}
-.input-group label{
-  margin-right: 15px;
-  font-weight: bold;
-  align-self: center;
-  /* justify-self: right; */
-}
-
-.text-input{
-  grid-template-columns: 1fr;
-  grid-template-rows: 30px 1fr;
-}
-.text-input label{
-  justify-self: left;
-}
-.text-input textarea{
-  width:100%;
-  height:100%;
-  align-self: center;
-  justify-self: center;
-  resize: none;
-  font-family: Helvetica, Arial, sans-serif;
-}
-.buttons{
-  max-width: 250px;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-}
-.blog-content{
-  padding:0;
-}
-.blog-container{
-  padding: 25px 10%;
-}
-.blog-img{
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 100vw;
-  color: white;
-  text-shadow: 1px 1px 6px #111, -1px -1px 6px #111;  
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 25px;
-}
-
-.modal-bg{
-  background-color: rgba(5,5,5,0.5);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top:0;
-  left: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;;
-}
-.box{
-  background-color: white;
-  border: 1px solid #444;
-  border-radius: 2px;
-  padding: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-gap: 15px;
-  justify-items: center;
-  align-items: center;
-}
-.box h3{
-  grid-column: 1/3;
-}
-.box button{
-  width: 100%;
 }
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BlogTile from './subcomponents/BlogTile';
-import UserTile from './subcomponents/UserTile';
+import BlogTile from '../BlogTile/BlogTile';
+import UserTile from '../UserTile/UserTile';
 import axios from 'axios';
 
 class Search extends Component{

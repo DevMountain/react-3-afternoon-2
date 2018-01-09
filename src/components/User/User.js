@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import BlogTile from './subcomponents/BlogTile';
+import BlogTile from '../BlogTile/BlogTile';
 
 // import axios
 

@@ -1,0 +1,7 @@
+.Add__content {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 30px) 1fr 50px;
+  grid-gap: 15px;
+}

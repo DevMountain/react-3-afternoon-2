@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Hero from './subcomponents/Hero';
-import BlogThumb from './subcomponents/BlogThumb';
+import Hero from './Hero/Hero';
+import BlogThumb from '../BlogThumb/BlogThumb';
 
 // import axios
 
